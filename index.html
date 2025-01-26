@@ -6,17 +6,24 @@
     <title>Unspool - Your Digital Journal</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
+    <meta name="description" content="Transform your thoughts into stories with Unspool - the secure voice journaling app with AI-powered insights and mood tracking.">
 </head>
-<body class="bg-custom-black text-white">
+<body class="bg-custom-black text-white" style="background-color: #000;">
     <!-- Hero Section -->
     <header class="hero-gradient min-h-screen flex flex-col justify-center items-center text-center px-4">
         <div class="max-w-4xl mx-auto">
             <img src="assets/images/logo-white.png" alt="Unspool Logo" class="w-32 h-32 mx-auto mb-8 float-animation">
-            <h1 class="text-6xl font-bold mb-6 gradient-text">Transform Your Thoughts into Stories</h1>
-            <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">Your secure space for voice journaling, with AI-powered insights and mood tracking</p>
-            <div class="space-x-6">
-                <a href="https://play.google.com/apps/testing/xyz.unspoolapp.android" class="bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-gray-200 transition">Download for Android</a>
-                <a href="#" class="border border-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-black transition">iOS Coming Soon</a>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">Transform Your Thoughts into Stories</h1>
+            <p class="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto">Your secure space for voice journaling, with AI-powered insights and mood tracking</p>
+            <div class="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
+                <a href="https://play.google.com/apps/testing/xyz.unspoolapp.android" 
+                   class="bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-gray-200 transition w-full md:w-auto text-center">
+                   Download for Android
+                </a>
+                <a href="#" 
+                   class="border border-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-black transition w-full md:w-auto text-center">
+                   iOS Coming Soon
+                </a>
             </div>
         </div>
     </header>
@@ -24,10 +31,10 @@
     <!-- Screenshots Section -->
     <section class="py-20 px-4">
         <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-3 gap-8">
-                <img src="assets/images/screenshots/voice-journal.jpeg" alt="Voice Journaling" class="rounded-2xl shadow-lg">
-                <img src="assets/images/screenshots/mood-tracking.jpeg" alt="Mood Tracking" class="rounded-2xl shadow-lg">
-                <img src="assets/images/screenshots/daily-entries.jpeg" alt="Insights" class="rounded-2xl shadow-lg">
+            <div class="screenshot-grid grid md:grid-cols-3 gap-8">
+                <img src="assets/images/screenshots/voice-journal.jpeg" alt="Voice Journaling Interface" class="rounded-2xl shadow-lg">
+                <img src="assets/images/screenshots/mood-tracking.jpeg" alt="Mood Tracking Dashboard" class="rounded-2xl shadow-lg">
+                <img src="assets/images/screenshots/daily-entries.jpeg" alt="Daily Journal Entries" class="rounded-2xl shadow-lg">
             </div>
         </div>
     </section>
@@ -35,7 +42,7 @@
     <!-- Features Section -->
     <section class="py-20 px-4">
         <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="feature-grid grid md:grid-cols-2 lg:grid-cols-3 gap-12">
                 <!-- Voice Journaling -->
                 <div class="text-center p-8 feature-card">
                     <img src="assets/images/features/voice.svg" alt="Voice Journaling" class="w-16 h-16 mx-auto mb-6 feature-icon">
@@ -63,10 +70,13 @@
     <!-- Call to Action -->
     <section class="py-20 px-4 cta-gradient">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-8 gradient-text">Begin Your Journey Today</h2>
-            <p class="text-xl text-gray-400 mb-12">Join thousands of others who are discovering the power of mindful journaling</p>
-            <div class="space-x-6">
-                <a href="https://play.google.com/apps/testing/xyz.unspoolapp.android" class="bg-teal-500 text-black px-8 py-4 rounded-full font-semibold hover:bg-teal-400 transition">Try Unspool Free</a>
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 gradient-text">Begin Your Journey Today</h2>
+            <p class="text-lg md:text-xl text-gray-400 mb-12">Join thousands of others who are discovering the power of mindful journaling</p>
+            <div class="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
+                <a href="https://play.google.com/apps/testing/xyz.unspoolapp.android" 
+                   class="bg-teal-500 text-black px-8 py-4 rounded-full font-semibold hover:bg-teal-400 transition w-full md:w-auto text-center">
+                   Try Unspool Free
+                </a>
             </div>
         </div>
     </section>
