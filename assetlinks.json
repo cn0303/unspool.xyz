@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "xyz.unspoolapp.android",
+      "sha256_cert_fingerprints": [
+        "71:2E:D2:82:20:B8:FB:9E:27:BA:5A:0B:B8:58:27:CD:5E:43:AD:22:F8:4F:FA:A0:AE:75:E1:71:28:63:EA:C5"
+      ]
+    }
+  }
+]
