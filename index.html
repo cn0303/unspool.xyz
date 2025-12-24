@@ -9,14 +9,29 @@
     <meta name="description" content="Transform your thoughts into stories with Unspool - the secure voice journaling app with AI-powered insights and mood tracking.">
 </head>
 <body class="bg-custom-black text-white" style="background-color: #000;">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-90 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3">
+                <img src="assets/images/logo-white.png" alt="Unspool Logo" class="w-10 h-10">
+                <span class="font-semibold text-lg">Unspool</span>
+            </a>
+            <div class="flex gap-6 text-sm">
+                <a href="#features" class="text-gray-400 hover:text-white transition">Features</a>
+                <a href="#screenshots" class="text-gray-400 hover:text-white transition">Screenshots</a>
+                <a href="#support" class="text-gray-400 hover:text-white transition">Support</a>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
-    <header class="hero-gradient min-h-screen flex flex-col justify-center items-center text-center px-4">
+    <header class="hero-gradient min-h-screen flex flex-col justify-center items-center text-center px-4 pt-16">
         <div class="max-w-4xl mx-auto">
             <img src="assets/images/logo-white.png" alt="Unspool Logo" class="w-32 h-32 mx-auto mb-8 float-animation">
             <h1 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">Transform Your Thoughts into Stories</h1>
             <p class="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto">Your secure space for voice journaling, with AI-powered insights and mood tracking</p>
             <div class="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
-                <a href="https://play.google.com/apps/testing/xyz.unspoolapp.android" 
+                <a href="https://play.google.com/store/apps/details?id=xyz.unspoolapp.android" 
                    class="bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-gray-200 transition w-full md:w-auto text-center">
                    Download for Android
                 </a>
@@ -29,19 +44,32 @@
     </header>
 
     <!-- Screenshots Section -->
-    <section class="py-20 px-4">
+    <section id="screenshots" class="py-20 px-4">
         <div class="max-w-6xl mx-auto">
-            <div class="screenshot-grid grid md:grid-cols-3 gap-8">
-                <img src="assets/images/screenshots/voice-journal.jpeg" alt="Voice Journaling Interface" class="rounded-2xl shadow-lg">
-                <img src="assets/images/screenshots/mood-tracking.jpeg" alt="Mood Tracking Dashboard" class="rounded-2xl shadow-lg">
-                <img src="assets/images/screenshots/daily-entries.jpeg" alt="Daily Journal Entries" class="rounded-2xl shadow-lg">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center gradient-text">See Unspool in Action</h2>
+            <p class="text-gray-400 text-center mb-12 max-w-xl mx-auto">Swipe through to explore the intuitive interface designed for effortless journaling</p>
+            <div class="screenshot-carousel">
+                <div class="screenshot-track">
+                    <img src="assets/images/screenshots/1.png" alt="Unspool Screenshot 1" class="screenshot-item">
+                    <img src="assets/images/screenshots/2.png" alt="Unspool Screenshot 2" class="screenshot-item">
+                    <img src="assets/images/screenshots/3.png" alt="Unspool Screenshot 3" class="screenshot-item">
+                    <img src="assets/images/screenshots/4.png" alt="Unspool Screenshot 4" class="screenshot-item">
+                    <img src="assets/images/screenshots/5.png" alt="Unspool Screenshot 5" class="screenshot-item">
+                    <img src="assets/images/screenshots/6.png" alt="Unspool Screenshot 6" class="screenshot-item">
+                    <img src="assets/images/screenshots/7.png" alt="Unspool Screenshot 7" class="screenshot-item">
+                    <img src="assets/images/screenshots/8.png" alt="Unspool Screenshot 8" class="screenshot-item">
+                    <img src="assets/images/screenshots/9.png" alt="Unspool Screenshot 9" class="screenshot-item">
+                    <img src="assets/images/screenshots/10.png" alt="Unspool Screenshot 10" class="screenshot-item">
+                </div>
             </div>
+            <p class="text-gray-500 text-center mt-6 text-sm">← Scroll to see more →</p>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="py-20 px-4">
+    <section id="features" class="py-20 px-4">
         <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">Why Choose Unspool?</h2>
             <div class="feature-grid grid md:grid-cols-2 lg:grid-cols-3 gap-12">
                 <!-- Voice Journaling -->
                 <div class="text-center p-8 feature-card">
@@ -73,10 +101,85 @@
             <h2 class="text-3xl md:text-4xl font-bold mb-8 gradient-text">Begin Your Journey Today</h2>
             <p class="text-lg md:text-xl text-gray-400 mb-12">Join thousands of others who are discovering the power of mindful journaling</p>
             <div class="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
-                <a href="https://play.google.com/apps/testing/xyz.unspoolapp.android" 
+                <a href="https://play.google.com/store/apps/details?id=xyz.unspoolapp.android" 
                    class="bg-teal-500 text-black px-8 py-4 rounded-full font-semibold hover:bg-teal-400 transition w-full md:w-auto text-center">
                    Try Unspool Free
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="py-20 px-4 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">Support & Contact</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Contact Card -->
+                <div class="support-card p-8 rounded-2xl">
+                    <h3 class="text-xl font-semibold mb-6 text-teal-400">Get in Touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-sm">Developer</p>
+                                <p class="text-white">Chandran N</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-sm">Email</p>
+                                <a href="mailto:unspoolapp@gmail.com" class="text-white hover:text-teal-400 transition">unspoolapp@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feedback Card -->
+                <div class="support-card p-8 rounded-2xl">
+                    <h3 class="text-xl font-semibold mb-6 text-teal-400">Share Feedback</h3>
+                    <p class="text-gray-400 mb-6">We'd love to hear from you! Share your feedback, suggestions, or report issues directly through the app.</p>
+                    <div class="space-y-4">
+                        <a href="https://play.google.com/store/apps/details?id=xyz.unspoolapp.android" 
+                           class="flex items-center gap-4 p-4 rounded-xl bg-gray-800 hover:bg-gray-700 transition group">
+                            <div class="w-10 h-10 rounded-full bg-gray-700 group-hover:bg-gray-600 flex items-center justify-center transition">
+                                <svg class="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium">In-App Feedback</p>
+                                <p class="text-gray-500 text-sm">Rate and review on Google Play</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div class="mt-12 pt-8 border-t border-gray-800">
+                <div class="flex flex-wrap justify-center gap-8 text-sm">
+                    <div class="text-center">
+                        <p class="text-gray-500 mb-2">Marketing URL</p>
+                        <a href="https://unspool.xyz" class="text-teal-400 hover:text-teal-300 transition">unspool.xyz</a>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gray-500 mb-2">Support URL</p>
+                        <a href="https://unspool.xyz/#support" class="text-teal-400 hover:text-teal-300 transition">unspool.xyz/#support</a>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gray-500 mb-2">Download</p>
+                        <a href="https://play.google.com/store/apps/details?id=xyz.unspoolapp.android" class="text-teal-400 hover:text-teal-300 transition">Google Play Store</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

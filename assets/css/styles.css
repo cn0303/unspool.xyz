@@ -39,6 +39,72 @@
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(45,212,191,0.1) 100%);
 }
 
+/* Screenshot Carousel */
+.screenshot-carousel {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #2DD4BF #1a1a1a;
+    padding: 1rem 0;
+}
+
+.screenshot-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.screenshot-carousel::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 4px;
+}
+
+.screenshot-carousel::-webkit-scrollbar-thumb {
+    background: #2DD4BF;
+    border-radius: 4px;
+}
+
+.screenshot-carousel::-webkit-scrollbar-thumb:hover {
+    background: #3B82F6;
+}
+
+.screenshot-track {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    width: max-content;
+}
+
+.screenshot-item {
+    flex-shrink: 0;
+    width: 280px;
+    height: auto;
+    border-radius: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgba(45, 212, 191, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshot-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 50px -12px rgba(45, 212, 191, 0.25);
+}
+
+/* Support Cards */
+.support-card {
+    background: linear-gradient(145deg, #0a0a0a 0%, #111111 100%);
+    border: 1px solid #222;
+    transition: border-color 0.3s ease;
+}
+
+.support-card:hover {
+    border-color: #2DD4BF;
+}
+
+/* Navigation smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
 @media (max-width: 768px) {
     .screenshot-grid {
         grid-template-columns: 1fr !important;
@@ -55,5 +121,14 @@
     .feature-grid {
         grid-template-columns: 1fr !important;
         padding: 0 1rem;
+    }
+
+    .screenshot-item {
+        width: 220px;
+    }
+
+    nav .flex.gap-6 {
+        gap: 1rem;
+        font-size: 0.75rem;
     }
 }
