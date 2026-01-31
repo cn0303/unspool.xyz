@@ -18,10 +18,25 @@
                 <img src="assets/images/logo-white.png" alt="Unspool Logo" class="w-10 h-10">
                 <span class="font-semibold text-lg">Unspool</span>
             </a>
-            <div class="flex gap-6 text-sm">
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex gap-6 text-sm">
                 <a href="#features" class="text-gray-400 hover:text-white transition">Features</a>
                 <a href="#screenshots" class="text-gray-400 hover:text-white transition">Screenshots</a>
                 <a href="#support" class="text-gray-400 hover:text-white transition">Support</a>
+            </div>
+            <!-- Hamburger Menu Button -->
+            <button id="menu-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5" aria-label="Toggle menu">
+                <span class="hamburger-line w-6 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="hamburger-line w-6 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="hamburger-line w-6 h-0.5 bg-white transition-all duration-300"></span>
+            </button>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden hidden bg-black border-t border-gray-800">
+            <div class="flex flex-col px-4 py-4 space-y-4">
+                <a href="#features" class="text-gray-400 hover:text-white transition py-2">Features</a>
+                <a href="#screenshots" class="text-gray-400 hover:text-white transition py-2">Screenshots</a>
+                <a href="#support" class="text-gray-400 hover:text-white transition py-2">Support</a>
             </div>
         </div>
     </nav>
@@ -44,6 +59,22 @@
             </div>
         </div>
     </header>
+
+    <!-- Video Section -->
+    <section class="py-16 px-4 bg-black">
+        <div class="max-w-4xl mx-auto">
+            <div class="video-container relative w-full" style="padding-bottom: 56.25%;">
+                <iframe 
+                    class="absolute top-0 left-0 w-full h-full rounded-2xl"
+                    src="https://www.youtube.com/embed/Wb_zPYpKpmA" 
+                    title="Unspool Video"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
 
     <!-- Screenshots Section -->
     <section id="screenshots" class="py-20 px-4">
@@ -196,5 +227,26 @@
             <p>&copy; 2024 Unspool. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerLines = document.querySelectorAll('.hamburger-line');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuToggle.classList.toggle('menu-open');
+        });
+
+        // Close menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuToggle.classList.remove('menu-open');
+            });
+        });
+    </script>
 </body>
 </html>
